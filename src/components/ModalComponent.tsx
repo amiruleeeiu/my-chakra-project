@@ -21,7 +21,8 @@ function ModalComponent() {
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader>Modal Title</ModalHeader>
+          <ModalHeader py={3} px={4}>Modal Title</ModalHeader>
+          <hr />
           <ModalCloseButton />
           <ModalBody>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque

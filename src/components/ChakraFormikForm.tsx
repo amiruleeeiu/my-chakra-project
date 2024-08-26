@@ -1,8 +1,10 @@
 // src/components/ChakraFormikForm.tsx
 
+import { AddIcon } from "@chakra-ui/icons";
 import {
   Box,
   Button,
+  Flex,
   FormControl,
   FormErrorMessage,
   FormLabel,
@@ -50,7 +52,11 @@ export const ChakraFormikForm: React.FC = () => {
                 return (
                   <FormControl isInvalid={!!error}>
                     <FormLabel htmlFor="name">Name</FormLabel>
-                    <Input {...field} id="name" placeholder="Enter your name" />
+                    <Input
+                      {...field}
+                      id="name"
+                      placeholder="Enter your name"
+                    />
                     <FormErrorMessage>
                       {typeof error === "string" ? error : null}
                     </FormErrorMessage>
@@ -60,7 +66,7 @@ export const ChakraFormikForm: React.FC = () => {
             </Field>
           </Box>
 
-          <Box mt={4}>
+          <Box mt={1}>
             <Field name="email">
               {({ field, form }: FieldProps<string>) => {
                 const error =
@@ -84,14 +90,18 @@ export const ChakraFormikForm: React.FC = () => {
             </Field>
           </Box>
 
-          <Button
-            mt={4}
-            colorScheme="teal"
-            isLoading={isSubmitting}
-            type="submit"
-          >
-            Submit
-          </Button>
+          <Flex justifyContent="end">
+            <Button
+              mt={3}
+              colorScheme="purple"
+              isLoading={isSubmitting}
+              type="submit"
+              leftIcon={<AddIcon />}
+              loadingText="Submitting"
+            >
+              Submit
+            </Button>
+          </Flex>
         </Form>
       )}
     </Formik>

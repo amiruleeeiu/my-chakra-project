@@ -1,3 +1,4 @@
+import { EditIcon, ViewIcon } from "@chakra-ui/icons";
 import {
   Button,
   Drawer,
@@ -19,7 +20,12 @@ function DrawerComponent() {
 
   return (
     <>
-      <Button ref={btnRef} colorScheme="teal" onClick={onOpen}>
+      <Button
+        ref={btnRef}
+        colorScheme="teal"
+        onClick={onOpen}
+        leftIcon={<ViewIcon />}
+      >
         Open
       </Button>
       <br />
@@ -42,7 +48,11 @@ function DrawerComponent() {
             <Button variant="outline" mr={3} onClick={onClose}>
               Cancel
             </Button>
-            <Button colorScheme="blue">Save</Button>
+            <Button
+              colorScheme="blue"
+              leftIcon={<EditIcon />}
+              variant="outline"
+            ></Button>
           </DrawerFooter>
         </DrawerContent>
       </Drawer>

@@ -10,7 +10,7 @@ import {
 
 function AccordionComponent() {
   return (
-    <Accordion allowToggle>
+    <Accordion allowToggle borderX='1px' borderColor='gray.200' borderRadius='md'>
       <AccordionItem>
         <h2>
           <AccordionButton>

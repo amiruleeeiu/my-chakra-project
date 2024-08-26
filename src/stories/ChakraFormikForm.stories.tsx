@@ -11,7 +11,7 @@ export default {
 
 const Template: StoryFn<typeof ChakraFormikForm> = (args) => (
   <ChakraProvider>
-    <Box width="400px" p="4">
+    <Box  p="4">
       <ChakraFormikForm {...args} />
     </Box>
   </ChakraProvider>

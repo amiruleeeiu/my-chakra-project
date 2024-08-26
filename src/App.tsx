@@ -1,14 +1,16 @@
 import { Box } from "@chakra-ui/react";
 import "./App.css";
 import AccordionComponent from "./components/AccordionComponent";
-import DrawerComponent from "./components/DrawerComponent";
-import MenuComponent from "./components/MenuComponent";
-import TabComponent from "./components/TabComponent";
-import ModalComponent from "./components/MOdalCOmponent";
-import CustomToolTip from "./components/CustomToolTip";
-import ImageComponent from "./components/ImageComponent";
 import BadgeCom from "./components/BadgeCom";
 import CardComponent from "./components/CardComponent";
+import CustomToolTip from "./components/CustomToolTip";
+import DrawerComponent from "./components/DrawerComponent";
+import ImageComponent from "./components/ImageComponent";
+import MenuComponent from "./components/MenuComponent";
+import ModalComponent from "./components/MOdalCOmponent";
+import StackEx from "./components/StackEx";
+import TabComponent from "./components/TabComponent";
+import PaginationPages from "./pages/PaginationPages";
 
 function App() {
   return (
@@ -21,15 +23,33 @@ function App() {
       <br />
       <MenuComponent />
       <br />
-      <ModalComponent/>
+      <ModalComponent />
       <br />
-      <CustomToolTip/>
+      <CustomToolTip />
       <br />
-      <ImageComponent/>
+      <ImageComponent />
       <br />
-      <BadgeCom/>
+      <BadgeCom />
       <br />
-      <CardComponent/>
+      <CardComponent />
+      <br />
+      <StackEx />
+      <br />
+      <PaginationPages />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </Box>
   );
 }
